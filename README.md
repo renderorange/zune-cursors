@@ -89,6 +89,22 @@ The following cursors are missing from the source and are aliased to the closest
 | center_ptr | default |
 | openhand, closedhand | dnd-move |
 
+## releasing
+
+Releases are automated via GitHub Actions. To create a new release:
+
+1. Go to **Actions** → **Release** → **Run workflow**
+2. Select the bump type:
+   - **major** - for breaking changes (e.g., 1.0.0 → 2.0.0)
+   - **minor** - for new features (e.g., 1.0.0 → 1.1.0)
+   - **patch** - for bug fixes (e.g., 1.0.0 → 1.0.1)
+3. Click **Run workflow**
+
+This will:
+- Update CHANGELOG.md with the new version
+- Create an annotated git tag
+- Create a GitHub release
+
 ## copyright and license
 
 Copyright (c) 2026 Mark Edward under the MIT license.
